@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="PHPStudios_AddressAutoComplete::phpstudios"
+             title="Address Auto Complete"
+             module="PHPStudios_AddressAutoComplete"
+             sortOrder="1"
+             parent="PHPStudios_Core::phpstudios"
+             resource="PHPStudios_AddressAutoComplete::menu"/>
+        <add id="PHPStudios_AddressAutoComplete::configurations"
+             title="Configuration"
+             module="PHPStudios_AddressAutoComplete"
+             sortOrder="5"
+             parent="PHPStudios_AddressAutoComplete::phpstudios"
+             resource="PHPStudios_Configuration::configuration"
+             action="admin/system_config/edit/section/address_autocomplete"/>
+    </menu>
+</config>

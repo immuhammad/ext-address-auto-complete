@@ -1,0 +1,29 @@
+{
+    "name": "phpstudios/address-auto-complete",
+    "description": "By using this extension customers can get address auto complete suggestions while filling their billing or shipping address on different places.",
+    "require": {
+        "php": ">=7.1.0",
+        "phpstudios/core": "1.0.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "proprietary"
+    ],
+    "authors": [
+        {
+            "name": "Support",
+            "email": "techsupport@phpstudios.com",
+            "homepage": "https://www.phpstudios.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "PHPStudios\\AddressAutoComplete\\": ""
+        }
+    }
+}
