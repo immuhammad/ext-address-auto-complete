@@ -11,7 +11,7 @@
                                 <item name="autocomplete" xsi:type="array">
                                     <item name="sortOrder" xsi:type="string">0</item>
                                     <item name="component" xsi:type="string">
-                                        PHPStudios_AddressAutoComplete/js/autocomplete
+                                        Conequate_AddressAutoComplete/js/autocomplete
                                     </item>
                                 </item>
                             </item>

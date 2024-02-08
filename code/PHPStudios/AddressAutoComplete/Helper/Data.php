@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPStudios\AddressAutoComplete\Helper;
+namespace Conequate\AddressAutoComplete\Helper;
 
 use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Framework\App\Helper\Context;
@@ -8,7 +8,7 @@ use Magento\Store\Model\ScopeInterface;
 
 /**
  * Class Data
- * @package PHPStudios\AddressAutoComplete\Helper
+ * @package Conequate\AddressAutoComplete\Helper
  */
 class Data extends AbstractHelper
 {

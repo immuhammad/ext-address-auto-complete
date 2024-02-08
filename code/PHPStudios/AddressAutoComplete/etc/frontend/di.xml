@@ -4,8 +4,8 @@
     <type name="Magento\Checkout\Model\CompositeConfigProvider">
         <arguments>
             <argument name="configProviders" xsi:type="array">
-                <item name="phpstudios_address_autocomplete_shipping_block" xsi:type="object">
-                    PHPStudios\AddressAutoComplete\Model\AutocompleteConfigProvider
+                <item name="conequate_address_autocomplete_shipping_block" xsi:type="object">
+                    Conequate\AddressAutoComplete\Model\AutocompleteConfigProvider
                 </item>
             </argument>
         </arguments>

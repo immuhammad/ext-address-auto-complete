@@ -1,14 +1,14 @@
 <?php
 
-namespace PHPStudios\AddressAutoComplete\Model;
+namespace Conequate\AddressAutoComplete\Model;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
-use PHPStudios\AddressAutoComplete\Helper\Data;
+use Conequate\AddressAutoComplete\Helper\Data;
 use Magento\Framework\Encryption\EncryptorInterface;
 
 /**
  * Class AutocompleteConfigProvider
- * @package PHPStudios\AddressAutoComplete\Model
+ * @package Conequate\AddressAutoComplete\Model
  */
 class AutocompleteConfigProvider implements ConfigProviderInterface
 {
@@ -39,7 +39,7 @@ class AutocompleteConfigProvider implements ConfigProviderInterface
      */
     public function getConfig()
     {
-        $config['phpstudios_autocomplete'] = [
+        $config['conequate_autocomplete'] = [
             'active' => $this->helper->getConfigValue('address_autocomplete/general/active'),
             'api_key' => $this->encryptor->decrypt($this->helper->getConfigValue('address_autocomplete/general/google_api_key')),
             'use_geolocation' => $this->helper->getConfigValue('address_autocomplete/general/use_geolocation'),

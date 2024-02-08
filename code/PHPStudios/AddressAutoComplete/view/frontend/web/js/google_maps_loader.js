@@ -7,7 +7,7 @@ define(['jquery'], function ($) {
         window.google_maps_loaded = function () {
             google_maps_loaded_def.resolve(google.maps);
         }
-        var apiKey = window.checkoutConfig.phpstudios_autocomplete.api_key;
+        var apiKey = window.checkoutConfig.conequate_autocomplete.api_key;
         if (apiKey != 'false' && apiKey !== null) {
             var url = 'https://maps.googleapis.com/maps/api/js?key=' + apiKey + '&libraries=places&callback=google_maps_loaded';
             require([url], function () {

@@ -1,9 +1,9 @@
 {
-    "name": "phpstudios/address-auto-complete",
+    "name": "conequate/address-auto-complete",
     "description": "By using this extension customers can get address auto complete suggestions while filling their billing or shipping address on different places.",
     "require": {
         "php": ">=7.1.0",
-        "phpstudios/core": "1.0.*"
+        "conequate/core": "1.0.*"
     },
     "type": "magento2-module",
     "version": "1.0.0",
@@ -13,8 +13,8 @@
     "authors": [
         {
             "name": "Support",
-            "email": "techsupport@phpstudios.com",
-            "homepage": "https://www.phpstudios.com",
+            "email": "",
+            "homepage": "https://www.conequate.com",
             "role": "Developer"
         }
     ],
@@ -23,7 +23,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "PHPStudios\\AddressAutoComplete\\": ""
+            "Conequate\\AddressAutoComplete\\": ""
         }
     }
 }

@@ -4,15 +4,15 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="PHPStudios_Core::menu">
-                    <resource id="PHPStudios_AddressAutoComplete::menu" title="Autocomplete Configuration"
+                <resource id="Conequate_Core::menu">
+                    <resource id="Conequate_AddressAutoComplete::menu" title="Autocomplete Configuration"
                               sortOrder="20"/>
                 </resource>
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="PHPStudios_Configuration::configuration"
-                                      title="PHPStudios Address Autocomplete" translate="title"/>
+                            <resource id="Conequate_Configuration::configuration"
+                                      title="Conequate Address Autocomplete" translate="title"/>
                         </resource>
                     </resource>
                 </resource>

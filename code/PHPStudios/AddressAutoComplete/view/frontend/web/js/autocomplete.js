@@ -3,7 +3,7 @@ define([
     'uiComponent',
     'uiRegistry',
     'Magento_Checkout/js/checkout-data',
-    'PHPStudios_AddressAutoComplete/js/google_maps_loader'
+    'Conequate_AddressAutoComplete/js/google_maps_loader'
 ], function (
     $,
     Component,
@@ -41,7 +41,7 @@ define([
 
 
     GoogleMapsLoader.done(function () {
-        var enabled = window.checkoutConfig.phpstudios_autocomplete.active;
+        var enabled = window.checkoutConfig.conequate_autocomplete.active;
 
         var geocoder = new google.maps.Geocoder();
         setTimeout(function () {
@@ -117,7 +117,7 @@ define([
                         $('#' + thisDomID).val(postcode + postcodeSuffix);
                         $('#' + thisDomID).trigger('change');
                     }
-                } else if (addressType == 'postal_code_suffix' && window.checkoutConfig.phpstudios_autocomplete.use_long_postcode === '1') {
+                } else if (addressType == 'postal_code_suffix' && window.checkoutConfig.conequate_autocomplete.use_long_postcode === '1') {
                     postcodeSuffix = '-' + value;
                     var thisDomID = uiRegistry.get('checkout.steps.shipping-step.shippingAddress.shipping-address-fieldset.postcode').uid
                     if ($('#' + thisDomID).length) {
@@ -174,7 +174,7 @@ define([
     }
 
     geolocate = function () {
-        if (navigator.geolocation && window.checkoutConfig.phpstudios_autocomplete.use_geolocation === '1') {
+        if (navigator.geolocation && window.checkoutConfig.conequate_autocomplete.use_geolocation === '1') {
             navigator.geolocation.getCurrentPosition(function (position) {
                 var geolocation = {
                     lat: position.coords.latitude,

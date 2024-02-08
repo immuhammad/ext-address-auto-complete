@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPStudios\AddressAutoComplete\Helper;
+namespace Conequate\AddressAutoComplete\Helper;
 
 use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Framework\Encryption\EncryptorInterface;
